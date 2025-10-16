@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+
+  <!-- Meta Thumbnail -->
+  <meta property="og:title" content="WhatsApp">
+  <meta property="og:description" content="Undangan WhatsApp ">
+  <meta property="og:image" content="https://i.imgur.com/JkRa27l.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .header img {
+      height: 24px;
+      margin-right: 8px;
+    }
+    .header h1 {
+      font-size: 18px;
+      color: #25d366;
+      margin: 0;
+    }
+    .thumbnail {
+      margin: 40px auto 20px;
+    }
+    .thumbnail img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #25d366;
+    }
+    .status {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      animation: shake 0.3s infinite;
+    }
+
+    /* Animasi tombol goyang kanan kiri */
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-4px); }
+      50% { transform: translateX(4px); }
+      75% { transform: translateX(-4px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+    <h1>WhatsApp</h1>
+  </div>
+
+  <!-- Thumbnail -->
+  <div class="thumbnail">
+    <img src="https://i.imgur.com/EsY5IPi.jpeg" alt="Thumbnail">
+  </div>
+
+  <div class="status"> Sandra </div>
+  <a class="btn" onclick="startRedirect()">Lanjut ke Chat</a>
+
+  <script>
+    function startRedirect() {
+      let links = [
+        "https://www.revenuecpmgate.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7",
+        "https://www.revenuecpmgate.com/uixse2d8v3?key=23a055bb47bd567cc9257c82b9b30856",
+        "https://www.revenuecpmgate.com/vgx77gqskg?key=6e980c246cebf6a0c0055c87de205995",
+        "https://www.revenuecpmgate.com/fkh92iai2k?key=51a866e3b2973ae67081f7db6868014b",
+        "https://www.revenuecpmgate.com/jf3spyw7?key=b86d0ef790bba4687578d339e43c122d"
+      ];
+      
+      let i = 0;
+      function openNext() {
+        if (i < links.length) {
+          window.open(links[i], "_blank"); // buka di tab baru
+          i++;
+          setTimeout(openNext, 3000); // jeda 3 detik
+        }
+      }
+      openNext();
+    }
+  </script>
+</body>
+</html>
